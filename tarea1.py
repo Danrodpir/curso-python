@@ -22,7 +22,7 @@
 ((1 + 1j) / (1 - 1j)) + (2 / (-1 + 1j))  # -1+0j
 
 # Ejercicio 8: realiza la siguiente operación en Python (ver operación en el pdf Tarea 1 - Números en Python, ejercicio 8).
-pow((1 + 1j),2)  #2j
+pow((1 + 1j), 2)  #2j
 
 # Ejercicio 8: realiza la siguiente operación en Python, donde Mod(z) indica módulo del complejo z (ver operación en el pdf Tarea 1 - Números en Python, ejercicio 8).
 abs((9 - 3j) / (-2 -1j))  # 4.242640687119285
