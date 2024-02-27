@@ -52,3 +52,23 @@ s[:7]    # Muestra del primer al septimo elemento.
 s[8:]    # Muestra del noveno al último elemento.
 s[-10:]  # Muestra los diez últimos elementos.
 s[:-10]  # Muestra desde el principio hasta el decimo último elemento.
+
+# Otros metodos:
+s = "Me ENCANTA leer"
+s.lower()                        # 'me encanta leer'
+s.upper()                        # 'ME ENCANTA LEER'
+s.count("e")                     # 3
+s.capitalize()                   # 'Me encanta leer'
+s.title()                        # 'Me Encanta Leer'
+s.replace("Me ENCANTA", "ODIO")  # 'ODIO leer'
+s.split(" ")                     # ['Me', 'ENCANTA', 'leer']
+
+# El metodo find() tiene dos parametros opcionales, start y end, para decir donde queremos que empiece la busqueda y donde queremos que acabe:
+s.find("leer")                   # 11
+s.find("e", 3)                   # 12
+s.find("e", 1, 5)                # 1
+
+s = "    Me ENCANTA leer    "
+s.lstrip()                       # 'Me ENCANTA leer    '
+s.strip()                        # 'Me ENCANTA leer'
+s.rstrip()                       # '    Me ENCANTA leer'
