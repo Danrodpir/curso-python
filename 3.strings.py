@@ -60,15 +60,39 @@ s.upper()                        # 'ME ENCANTA LEER'
 s.count("e")                     # 3
 s.capitalize()                   # 'Me encanta leer'
 s.title()                        # 'Me Encanta Leer'
+s.swapcase()                     # 'mE encanta LEER'
 s.replace("Me ENCANTA", "ODIO")  # 'ODIO leer'
 s.split(" ")                     # ['Me', 'ENCANTA', 'leer']
+len(s)                           # 15
 
-# El metodo find() tiene dos parametros opcionales, start y end, para decir donde queremos que empiece la busqueda y donde queremos que acabe:
+# El metodo .find() y el metodo .index() tienen dos parametros opcionales, start y end, para indicar donde queremos que empiece la busqueda y donde queremos que acabe.
+# Ambos funcionan de la misma manera, excepto al devolver un error: .index() devuelve "error", mientras que .find() devuelve -1.
 s.find("leer")                   # 11
 s.find("e", 3)                   # 12
 s.find("e", 1, 5)                # 1
+
+s.index("leer")                  # 11
+s.index("e", 3)                  # 12
+s.index("e", 1, 5)               # 1
+
+# .rindex() busca el caracter indicado, mostrando la última opción:
+s.rindex("leer")                  # 11
+s.rindex("e", 3)                  # 13
+s.rindex("e", 1, 5)               # 1
 
 s = "    Me ENCANTA leer    "
 s.lstrip()                       # 'Me ENCANTA leer    '
 s.strip()                        # 'Me ENCANTA leer'
 s.rstrip()                       # '    Me ENCANTA leer'
+
+# input():
+print("Introduce tu nombre:")
+name = input()
+
+print("Introduce tu edad:")
+age = int(input())
+
+print("Introduce tu altura:")
+height = float(input())
+
+print("La edad de {} es {} y mide {}m".format(name, age, height))
