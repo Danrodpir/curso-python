@@ -64,6 +64,33 @@ s.swapcase()                     # 'mE encanta LEER'
 s.replace("Me ENCANTA", "ODIO")  # 'ODIO leer'
 s.split(" ")                     # ['Me', 'ENCANTA', 'leer']
 len(s)                           # 15
+s.startswith("m")                # False
+s.endswith("r")                  # True
+
+# isalnum() evalua si el string que le pasas solo tiene mayúsculas, minúsculas y números:
+s = "Farenhein451"
+s.isalnum()
+
+# isalpha() evalua si el string que le pasas solo tiene mayúsculas y minúsculas:
+s = "Dune"
+s.isalpha()
+
+# isdigit() evalua si el string que le pasas solo tiene números:
+s = "2546897"
+s.isdigit()
+
+# isspace() evalua si el string que le pasas solo tiene espacios:
+s = "       "
+s.isspace()
+
+# islower() e isupper() evalua si el string que le pasas esta en minúscula y mayusculas, respectivamente (ignora espacios en blanco):
+s = "Todo arde"
+s.islower()
+s.isupper()
+
+# istitle() evalua si cada palabra empieza en mayúscula y el resto en minúsculas (ignora espacios en blanco):
+s = "El Señor De Los Anillos"
+s.istitle()
 
 # El metodo .find() y el metodo .index() tienen dos parametros opcionales, start y end, para indicar donde queremos que empiece la busqueda y donde queremos que acabe.
 # Ambos funcionan de la misma manera, excepto al devolver un error: .index() devuelve "error", mientras que .find() devuelve -1.
