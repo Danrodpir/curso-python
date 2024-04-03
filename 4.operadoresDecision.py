@@ -1,3 +1,6 @@
+# Apuntes Google Colab:
+# https://colab.research.google.com/drive/1SSlL_QVF-ByqfoOHGyhdFsqWOR1SUTsU
+
 # El valor booleano debe escribirse con la primera letra en mayuscula:
 is_adult = True
 type(is_adult)

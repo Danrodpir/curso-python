@@ -1,3 +1,6 @@
+# Apuntes Google Colab: 
+# https://colab.research.google.com/drive/11OvjLBBCuAQgDLI-Rw7BMP0D_wiU2UCr
+
 # Type para saber que tipo de dato es:
 type(1)    # int
 type(1.0)  # float

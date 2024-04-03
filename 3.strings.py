@@ -1,4 +1,4 @@
-# Documento Google Colab del curso:
+# Apuntes Google Colab: 
 # https://colab.research.google.com/drive/1GedWsyCSvbU0CWYt5skHtA-HOVw3On7m#scrollTo=z_7YiTa_JJBl 
 
 # Tipo de un string:
