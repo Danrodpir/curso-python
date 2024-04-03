@@ -1,3 +1,6 @@
+# Apuntes Google Colab: 
+# https://colab.research.google.com/drive/1hoA0cWqmlPhwOssBsg1g_PMnYu3uHwzO
+
 # Declaración de variables:
 x = 1
 y = "Hola mundo"
