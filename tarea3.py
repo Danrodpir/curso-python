@@ -63,9 +63,18 @@ print("Más de 10 caracteres: ({})".format(len(nombre))) if len(nombre) > 10 els
 # Ejercicio 7
 # Haz que un usuario introduzca dos números enteros positivos. Comprueba si el mayor es múltiplo del menor.
 # Devuelve por pantalla el resultado en cada caso.
+
 # Ejercicio 8
 # Haz que un usuario introduzca una palabra y comprueba si dicha palabra empieza por mayúscula. Devuelve
 # por pantalla el resultado en cada caso.
+
+word = input("Incerte una palabra: ")
+
+if word.istitle():
+    print("{} empieza por mayúscula".format(word))
+else:
+    print("{} empieza por minúscula".format(word))
+
 # Ejercicio 9
 # Haz un usuario introduza una letra y comprueba si se trata de una vocal. Si el usuario introduce un string
 # de más de un carácter, infórmale de que no se puede procesar el dato, pues debe tener como máximo tamaño
