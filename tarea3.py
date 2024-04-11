@@ -37,11 +37,15 @@ print("Más de 10 caracteres: ({})".format(len(nombre))) if len(nombre) > 10 els
 # resultado en cada caso.
 # PISTA: Asegúrate de hacer uso de la función int() donde pertoque.
 
-# num1 = int(input("Introduzca un primer número: "))
-# num2 = int(input("Introduzca un segundo número: "))
+num1 = int(input("Introduzca un primer número: "))
+num2 = int(input("Introduzca un segundo número: "))
 
-# if num1 >= num2:
-
+if num1 <= 0 or num2 <= 0:
+    print("Los números deben ser positivos")
+elif num1 >= num2:
+    print("{} es mayor o igual a {}".format(num1, num2))
+else: 
+    print("{} es menor a {}".format(num1, num2))
 
 # Ejercicio 5
 # Haz que un usuario introduzca dos números enteros positivos. Suponiendo que el primer número introducido
@@ -50,7 +54,18 @@ print("Más de 10 caracteres: ({})".format(len(nombre))) if len(nombre) > 10 els
 # En caso de la división ser exacta, devuelve el cociente por pantalla e indica que la división en efecto es exacta.
 # En caso de la división no ser exacta, devuelve el cociente y el resto por pantalla e indica que la división entre
 # los dos números no es exacta
-# 1
+
+num1 = int(input("Introduzca un primer número: "))
+num2 = int(input("Introduzca un segundo número: "))
+
+if num1 <= 0 or num2 <= 0:
+    print("Los números deben ser positivos")
+elif num1 >= num2:
+    print("{} es mayor o igual a {}".format(num1, num2))
+else: 
+    print("{} es menor a {}".format(num1, num2))
+
+
 # Ejercicio 6
 # Fusiona lo hecho en los ejercicios 4 y 5 para que
 # 1. Un usuario introduzca dos números enteros por pantalla.
