@@ -63,11 +63,11 @@ if num1 <= 0 or num2 <= 0:
 elif num1 >= num2:
     print("{} es mayor o igual a {}".format(num1, num2))
 else: 
-    print("{} es menor a {}".format(num1, num2))
+    print("{} es menor a {}".format(num2, num1))
 
 
 # Ejercicio 6
-# Fusiona lo hecho en los ejercicios 4 y 5 para que
+# Fusiona lo hecho en los ejercicios 4 y 5 para que:
 # 1. Un usuario introduzca dos números enteros por pantalla.
 # 2. Comprobar si el primer número es mayor o igual al segundo número introducido por el usuario. Devolver
 # por pantalla en que caso nos encontramos.
@@ -75,6 +75,18 @@ else:
 # 4. Si la división es exacta, entonces devolver por pantalla el cociente e indicar que la división es exacta.
 # Si la división no es exacta, entonces devolver por pantalla el cociente y el resto e indicar que la división
 # realizada no es exacta.
+
+num1 = int(input("Introduzca un primer número: "))
+num2 = int(input("Introduzca un segundo número: "))
+
+if num1 >= num2:
+    print(num1 / num2)
+    print("{} es mayor o igual a {}".format(num1, num2))
+else: 
+    print(num2 / num1)
+    print("{} es menor a {}".format(num2, num1))
+    
+
 # Ejercicio 7
 # Haz que un usuario introduzca dos números enteros positivos. Comprueba si el mayor es múltiplo del menor.
 # Devuelve por pantalla el resultado en cada caso.
