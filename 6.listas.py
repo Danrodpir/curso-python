@@ -80,10 +80,47 @@ numeros = [0, 1, 1, 2, 2, 2, 3, 4, 3, 4]
 print(numeros.index(2))
 print(numeros.index(4))
 
-# .pop() devuelve el último elemento de la lista y lo borra de la misma:ç
+# .pop() devuelve el último elemento de la lista y lo borra de la misma:
 print(numeros)
 for i in range(5):
   print(numeros.pop())
   print(numeros)
 
-  
+# .remove() recibe como argumento un elemento y borra su primera aparición de la lista:
+numeros = [1, 2, 4, 3, 4, 5, 6]
+numeros.remove(4)
+print(numeros)
+
+# .reverse() devuelve la lista en orden inverso:
+numeros = [-2, -1, 0, 1, 2]
+numeros.reverse()
+print(numeros)
+
+# .sort() devuelve la vista en orden. También podemos ordenarla en orden inverso con reverse = True:
+numeros = [0, 9, 1, 6, 3, 8, 7, 5, 2, 4]
+numeros.sort()
+print(numeros)
+numeros.sort(reverse=True)
+print(numeros)
+
+# Conversión de listas:
+print(range(0, 100, 1))
+print(type(range(0, 100, 1)))
+
+print(list(range(0, 100, 1)))
+print(type(list(range(0, 100, 1))))
+
+# Listas anidadas:
+lista = [
+  ["María", "Santos", "Fernández"],
+  ["Juan", [1, 2, 3, 4, 5], 32],
+  2  
+]
+print(lista)
+
+print(lista[0][2])      # Fernández
+print(lista[1][1][4])   # 5
+
+# Matrices:
+matriz = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
+print(matriz)
