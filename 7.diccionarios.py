@@ -69,12 +69,42 @@ print(dicc_copy)
 # .fromkeys() recibe como parámetros un iterable y un valor y devuelve un diccionario 
 # que contiene como claves los elementos del iterable con el mismo valor ingresado. Si los parametros
 # de valor están en blanco, se mostrara un "none" en su lugar:
-# dicc = dict.fromkeys(["a", "b", "c", "d", "e"], [1, 2, 3, 4])
-# print(dicc)
+dicc = dict.fromkeys(["a", "b", "c", "d", "e"], [1, 2, 3, 4])
+print(dicc)
 
-# dicc = dict.fromkeys(["a", "b", "c", "d", "e"])
-# print(dicc)
+dicc = dict.fromkeys(["a", "b", "c", "d", "e"])
+print(dicc)
 
 # .get() recibe como parámetro una clave y devuelve el valor de dicha clave. De no existir, mostrara la respuesta "none":
-# dicc = {"a": 1, "e": 2, "i": 3, "o": 4, "u": 5}
-# print(dicc.get("a"))
+dicc = {"a": 1, "e": 2, "i": 3, "o": 4, "u": 5}
+print(dicc.get("a"))
+
+# .pop() recibe una clave, devuelve su valor y lo elimina del diccionario:
+dicc = {"a": 1, "e": 2, "i": 3, "o": 4, "u": 5}
+print(dicc)
+
+print(dicc.pop("i"))
+print(dicc)
+
+# .setdefault() puede server como un .get() o para agregar un nuevo elemento:
+# Como .get()
+dicc = {"a": 1, "e": 2, "i": 3, "o": 4, "u": 5}
+print(dicc.setdefault("i"))
+
+# Para agregar nuevo elemento
+print(dicc.setdefault("ü", 6))
+print(dicc)
+
+# .update() recibe como parametro otro diccionario. Si el valor existe, lo actualiza, si no lo añade:
+dicc1 = {"a": 1, "e": 2, "i": 3, "o": 4, "u": 5}
+dicc2 = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}
+dicc1.update(dicc2)
+
+print(dicc1)
+
+# .dict() sirve para convertir un objeto iterable en un diccionario, aunque puede usarse para contruirlo directa y correctamente:
+l = [["x", 1], ["y", 2]]
+dict(l)
+
+dicc3 = dict({"x": 0}, y = 1, z = -1)
+print(dicc3)
